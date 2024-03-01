@@ -25,4 +25,4 @@ Build a React website in 24 hours to showcase the following:
 
 ### Hosted the Portfolio on Netlify
 
-* Link: 
+* Link: https://amitjaggi-portfolio.netlify.app/
