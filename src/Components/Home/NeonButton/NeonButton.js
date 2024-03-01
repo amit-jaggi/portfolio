@@ -1,5 +1,5 @@
 import style from './NeonButton.module.css';
-import Resume from '../../../assets/amit-jaggi-cv.pdf';
+import Resume from '../../../assets/Resume.pdf';
 import { motion } from 'framer-motion';
 
 export const ContactBtn = ({ content }) => {
