@@ -1,6 +1,6 @@
 # Personal Portfolio website built in React
 
-This was a website built to showcase my technical skills, web design skills.
+This website is built to showcase my technical skills, web design skills.
 
 
 ## Project timeline and technologies used
