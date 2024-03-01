@@ -1,0 +1,53 @@
+.TestimonialsContainer {
+    background: #F7F7F7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.TestimonialsContainer h1 {
+    /* border: 1px solid black; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #105652;
+    padding: 6.5% 1% 1% 0;
+    position: relative;
+}
+
+.TestimonialsContainer h1:after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #FCA738;
+}
+
+.TestimonialsContainer .sliderBox {
+    /* border: 1px solid blue; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .TestimonialsContainer {
+        height: 215vh;
+    }
+
+    .TestimonialsContainer h1 {
+        padding: 22% 1% 1% 0;
+    }
+
+    .TestimonialsContainer .sliderBox {
+        flex-direction: column;
+    }
+}

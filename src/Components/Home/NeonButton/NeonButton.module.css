@@ -1,0 +1,66 @@
+.Neon {
+    width: 9.5rem;
+    height: 3.2rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.contact {
+    border: 3px solid #5ee8fd9d;
+    box-shadow: inset 0 0 8px 0 #5ee8fd9d, 0 0 8px 0 #5ee8fd9d;
+    text-shadow: 0 0 10px hsl(0deg 0% 100% / 20%), 0 0 16px #5ee8fd9d;
+}
+
+.contact:hover {
+    background: #5ee8fd9d;
+}
+
+.download {
+    margin: 0 0 0 3.7vw; 
+    border: 3px solid #FCA738;
+    text-shadow: 0 0 10px hsl(0deg 0% 100% / 20%), 0 0 20px #fca738;
+    box-shadow: inset 0 0 8px 0 #fca738, 0 0 8px 0 #fca738;
+}
+
+.download:hover {
+    background-color: #FCA738;
+}
+
+
+/* iPads & Tablests */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contact {
+        border: 3px solid #5ee8fd33;
+        background: #5ee8fd9d;
+        text-shadow: 0 0 0 hsl(0deg 0% 100% / 20%), 0 0 20px #5ee8fd9d;
+        box-shadow: inset 0 0 0 0 #5ee8fd9d, 0 0 1px 0 #5ee8fd9d;
+    }
+    
+    .contact:hover {
+        text-shadow: 0 0 20px hsl(0deg 0% 100% / 20%), 0 0 20px #5ee8fd9d;
+        box-shadow: inset 0 0 8px 0 #5ee8fd9d, 0 0 8px 0 #5ee8fd9d;
+    }
+
+    .download {
+        margin: 0 0 0 3.7vw; 
+        border: 3px solid #FCA738;
+        background: #FCA738;
+        box-shadow: inset 0 0 0 0 #fca738, 0 0 0 0 #fca738;
+        text-shadow: 0 0 0 hsl(0deg 0% 100% / 20%), 0 0 20px #fca738;
+    }
+    
+    .download:hover {
+        text-shadow: 0 0 20px hsl(0deg 0% 100% / 20%), 0 0 20px #fca738;
+        box-shadow: inset 0 0 8px 0 #fca738, 0 0 8px 0 #fca738;
+    }
+}

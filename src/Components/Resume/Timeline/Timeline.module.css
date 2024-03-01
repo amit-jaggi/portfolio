@@ -1,0 +1,69 @@
+.timeline {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin: 4% 0 4% 6%;
+}
+
+.timeline::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #09BCAB;
+    border-radius: 50%;
+    top: 13%;
+    left: 0%;
+    transform: translate(-290%, 0%);
+}
+
+.timeline p {
+    margin: 2% 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.timeline .year {
+    position: absolute;
+    background-color: #FCA738;
+    font-weight: 500;
+    top: -7%;
+    right: 0;
+    padding: 6px 17px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 5px 10px #F57F173D;
+}
+
+.timeline .italic {
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .timeline {
+        margin: 4% 0 4% 2.5%;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline p {
+        font-size: 18px;
+    }
+    
+    .timeline .year {
+        top: 32%;
+        right: 0;
+        font-size: 13px;
+        padding: 4px 14px;
+    }
+    
+    .timeline .italic {
+        font-size: 15px;
+        margin: 5% 0;
+    }
+}

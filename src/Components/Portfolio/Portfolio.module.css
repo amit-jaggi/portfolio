@@ -1,0 +1,48 @@
+.PortfolioContainer {
+    background: #F7F7F7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PortfolioContainer h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #105652;
+    font-size: 40px;
+    margin: 6.5% 0 0 0;
+    padding: 0 2% 1% 0;
+    position: relative;
+    cursor: default;
+}
+
+.PortfolioContainer h1:after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #FCA738;
+}
+
+.Portfolios {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .PortfolioContainer h1 {
+        padding: 14% 2% 1% 0;
+    }
+
+    .Portfolios {
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+    }
+}

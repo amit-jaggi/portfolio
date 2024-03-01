@@ -1,0 +1,163 @@
+.Resume {
+    width: 100%;
+    height: 100vh;
+    background: #F7F7F7;
+    color: #105652;
+    cursor: default;
+}
+
+.Resume .ResumeBox {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Resume .ResumeBox h1 {
+    margin: 7% 0 1% 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding: 0 3% 1% 0;
+    position: relative;
+}
+
+.Resume .ResumeBox h1:after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #FCA738;
+}
+
+.Resume .ResumeBox .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* ------------------------------------- */
+
+.leftBox {
+    width: 70%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    display: flex;
+    padding: 0 3% 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftBox .experience {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.leftBox .experience .heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.leftBox .experience hr {
+    margin: 1% 0;
+    background: #C2C2C2;
+}
+
+
+
+
+
+
+/* ------------------------------------- */
+
+.Resume .ResumeBox .box .rightBox {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Resume .ResumeBox .box .rightBox .profile {
+    width: 95%;
+    height: 82%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.Resume .ResumeBox .box .rightBox .profile .image {
+    position: absolute;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 70px rgba(4, 4, 4, 0.15);
+}
+
+.Resume .ResumeBox .box .rightBox .socialMedia {
+    background: #fff;
+    width: 92%;
+    height: 15%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 70px rgba(4, 4, 4, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialBtn {
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.socialBtn:hover {
+    color: #FCA738;
+    opacity: 1;
+}
+
+
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .Resume {
+        height: 150vh;    
+    }
+
+    .Resume .ResumeBox {
+        padding: 13% 0 0 0;
+    }
+
+    .Resume .ResumeBox .box {
+        margin: 2% 0 0 0;
+        flex-direction: column;
+    }
+
+    /* ------------------------------------- */
+    
+    .Resume .ResumeBox .box .leftBox {
+        width: 100%;
+        height: 83%;
+    }
+
+    .leftBox .experience .heading {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    /* ------------------------------------- */
+
+    .Resume .ResumeBox .box .rightBox {
+        width: 100%;
+        height: 100%;
+        padding: 4% 0;
+    }
+}

@@ -1,0 +1,129 @@
+.contactContainer {
+    background: #F7F7F7;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactContainer .contactBox {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactContainer .contactBox h1 {
+    color: #105652;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding: 0 2% 1% 0;
+    margin: 7.5% 0 2% 0;
+    position: relative;
+    cursor: default;
+}
+
+.contactContainer .contactBox h1:after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #FCA738;
+}
+
+.contactContainer .contactBox .box {
+    width: 100%;
+    /* height: 75vh; */
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 40px rgba(4, 4, 4, 0.25);
+    display: flex;
+}
+
+.contactContainer .contactBox .box .leftBox {
+    background: #fff;
+    width: 50%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.contactContainer .contactBox .box .leftBox p {
+    margin: 0; 
+    font-size: 15px;    
+}
+
+.contactContainer .contactBox .box .leftBox .heading {    
+    font-size: 22px;
+    font-weight: bold; 
+    color: #105652; 
+}
+
+.contactContainer .contactBox .box .leftBox .compact p, a {
+    color: #858585;
+    text-decoration: none;
+    margin: 3% 0;
+    font-size: 15px;
+    font-weight: 500;    
+    display: flex;
+    align-items: center;
+}
+
+/* --------------------------------------- */
+
+.contactContainer .contactBox .box .rightBox {
+    background: #FBF3E4;
+    width: 50%;
+    padding: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.contactContainer .contactBox .box .rightBox p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold; 
+    color: #105652;
+}
+
+
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .contactContainer {
+        height: 130vh;
+    }
+
+    .contactContainer .contactBox {
+        padding: 13% 0 0 0;
+    }
+
+    .contactContainer .contactBox .box {
+        flex-direction: column;
+    }
+
+    .contactContainer .contactBox .box .leftBox {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .contactContainer .contactBox .box .leftBox .compact a {
+        font-size: 12px;
+    }
+    
+    .contactContainer .contactBox .box .leftBox .compact p {
+        font-size: 12px;
+    }
+    
+    .contactContainer .contactBox .box .rightBox {
+        width: 100%;
+        height: 360px;
+    }
+}

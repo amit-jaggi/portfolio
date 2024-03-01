@@ -1,0 +1,60 @@
+form {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 55vh;
+}
+
+form div {
+    margin: 3% 0;
+}
+
+form label, input, textarea {
+    display: block;
+    text-align: left; 
+}
+
+form label {
+    font-size: 12px;
+    padding: .5% 0;
+}
+
+form label span {
+    color: red;
+}
+
+form label span:before {
+    content: ' ';
+}
+
+form input, textarea {
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form textarea {
+    height: 50px;
+}
+
+.submitBtn {
+    text-align: center;
+    width: 45%;
+    height: 12%;
+    color: white;
+    border-radius: 4px;
+    background: #FCA738;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .submitBtn {
+        width: 50%;
+    }
+}

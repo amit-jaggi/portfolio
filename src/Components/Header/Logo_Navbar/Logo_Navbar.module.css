@@ -1,0 +1,124 @@
+/* ***** Logo Styling ***** */
+.Logo {
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    color: #105652;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+.Logo span {
+    /* border: 1px solid red; */
+    color: crimson;
+    font-family: 'Inspiration', cursive;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: default;
+}
+
+
+/* ***** Navigation-Bar Styling ***** */
+.NavBar {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 0 .3vw 0 .3vw;
+    position: relative;
+}
+
+.NavBar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: 0;
+    background: crimson;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease;
+}
+
+.NavBar a:hover::after {
+    transform: scale(1, 1);
+}
+
+.NavBar .Desktop {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.NavBar .Desktop .linkBox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavBar .Mobile {
+    display: none;
+}
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .Logo {
+        font-size: 24px;
+    }
+
+    /* .NavBar {
+        display: flex;
+    } */
+
+    .NavBar .Desktop {
+        display: none;
+    }
+
+    .NavBar .Mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .NavBar .Mobile .Hamburger {
+        font-size: 40px;
+        /* border: 1px solid black;
+        border-radius: 5px; */
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    .NavBar .Mobile .linkBox {
+        background: #F7F7F7;
+        position: absolute;
+        padding: 0 0 0 15%;
+        top: 72px;
+        right: 0;
+        width: 100%;
+        opacity: 0.95;
+    }
+
+    .NavBar a:hover::after {
+        transform: scale(0, 1);
+    }
+
+    .NavBar a:hover {
+        color: crimson;
+    }
+}

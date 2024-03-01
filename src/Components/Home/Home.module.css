@@ -1,0 +1,103 @@
+.HomeContainer {
+    background-color: #105652;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.HomeContainer .Home {
+    /* border: 1px solid white; */
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.HomeContainer .Home .Content {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.HomeContainer .Home .Content h1 {
+    font-size: 40px;
+}
+
+.HomeContainer .Home .Content h1 span {
+    color: #FCA738;
+}
+
+.HomeContainer .Home .Content p {
+    margin: 2% 0;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+
+.neonBtn {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-Content: flex-start;
+}
+
+/* ******* dark-green wave-background ******* */
+.Wave {
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/* ******* profile-picture-2-background ******* */
+.HomeContainer .BinaryWorld {
+    position: absolute;
+    width: 40%;
+    max-width: 400px;
+    bottom: 7%;
+    right: 8%;
+    z-index: 5;
+    /* opacity: 0.8; */
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 358px) and (max-width: 425px) {
+    .HomeContainer {
+        align-items: flex-start;
+    }
+
+    .HomeContainer .Home {
+        margin: 27% 0 0 0;
+        /* border: 1px solid white; */
+        width: 100%;
+        padding: 5%;
+    }
+
+    .HomeContainer .Home .Content h1 {
+        font-size: 33px;
+    }
+
+    .HomeContainer .Home .Content p {
+        font-size: 20px;
+    }
+
+    .HomeContainer .BinaryWorld {
+        width: 50%;
+        bottom: 5%;
+        right: 12%;
+    }
+}
+
