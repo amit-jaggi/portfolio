@@ -11,6 +11,9 @@ import todoWebMobile from '../../image/todo-web-mobile.jpg';
 import todoAppJS from '../../image/todo-app-js.jpg';
 import digitalClock from '../../image/digital-clock.JPG';
 import theSiren from '../../image/the-siren.JPG';
+import baseDashboard from '../../image/base-dashboard.PNG';
+import boltEarthAssingment from '../../image/bolt.earth-assignment.PNG';
+import goMarbleAssignment from '../../image/go-marble-dashboard.png';
 import person1 from '../../image/testimonial-image-1.jpeg';
 import person2 from '../../image/testimonial-image-2.jpg';
 import person3 from '../../image/testimonial-image-3.jpeg';
@@ -88,6 +91,27 @@ export const DataBase = ({children}) => {
             title : `The Siren Blog`,
             imageUrl : theSiren,
             repositoryUrl : `https://hopeful-brahmagupta-02115a.netlify.app/` 
+        },
+        {
+            id : `6`,
+            category : `Portfolio`,
+            title : `Revos Dashboard`,
+            imageUrl : boltEarthAssingment,
+            repositoryUrl : `https://eloquent-beignet-c1ce24.netlify.app/` 
+        },
+        {
+            id : `7`,
+            category : `Portfolio`,
+            title : `Base Dashboard | CSV Upload`,
+            imageUrl : baseDashboard,
+            repositoryUrl : `https://taupe-biscotti-874e94.netlify.app/` 
+        },
+        {
+            id : `8`,
+            category : `Portfolio`,
+            title : `Go Marble | Dashboard Panel`,
+            imageUrl : goMarbleAssignment,
+            repositoryUrl : `https://gomarble.netlify.app/` 
         },
         {
             id: `1`,

@@ -27,3 +27,9 @@ Build a React website in 24 hours to showcase the following:
 ### Hosted the Portfolio on Netlify
 
 * Link: https://amitjaggi-portfolio.netlify.app/
+
+## Author
+
+Amit Jaggi
+### Connect With Me
+[![Connect on LinkedIn](https://img.shields.io/badge/-Amit_Jaggi-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/amit-jaggi-175781134/)](https://www.linkedin.com/in/amit-jaggi-175781134/)
