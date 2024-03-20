@@ -14,6 +14,7 @@ import theSiren from '../../image/the-siren.JPG';
 import baseDashboard from '../../image/base-dashboard.PNG';
 import boltEarthAssingment from '../../image/bolt.earth-assignment.PNG';
 import goMarbleAssignment from '../../image/go-marble-dashboard.png';
+import inventoryManagementApp from '../../image/Inventory-Management-App.PNG';
 import person1 from '../../image/testimonial-image-1.jpeg';
 import person2 from '../../image/testimonial-image-2.jpg';
 import person3 from '../../image/testimonial-image-3.jpeg';
@@ -112,6 +113,13 @@ export const DataBase = ({children}) => {
             title : `Go Marble | Dashboard Panel`,
             imageUrl : goMarbleAssignment,
             repositoryUrl : `https://gomarble.netlify.app/` 
+        },
+        {
+            id : `9`,
+            category : `Portfolio`,
+            title : `Inventory Management App`,
+            imageUrl : inventoryManagementApp,
+            repositoryUrl : `https://inventory-management-v1.netlify.app/` 
         },
         {
             id: `1`,
